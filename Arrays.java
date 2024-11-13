@@ -14,6 +14,8 @@ public class Arrays{
         System.out.println("ages[7] = " + ages[7]);
         System.out.println("ages[8] = " + ages[8]);
         System.out.println("ages[9] = " + ages[9]);
+        ages[0] = 100; //replacing 0th index value
+        System.out.println("ages[0] = " + ages[0]);
         
         byte[] itemCounts = {5, 12, 3, 8, 15, 7, 10, 6, 4, 9};
         
@@ -27,6 +29,8 @@ public class Arrays{
         System.out.println("itemCounts[6] = " + itemCounts[6]);
         System.out.println("itemCounts[7] = " + itemCounts[7]);
         System.out.println("itemCounts[8] = " + itemCounts[8]);
+        System.out.println("itemCounts[9] = " + itemCounts[9]);
+        itemCounts[9]=10;
         System.out.println("itemCounts[9] = " + itemCounts[9]);
 
        
