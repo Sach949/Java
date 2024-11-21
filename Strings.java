@@ -31,11 +31,14 @@ public class Strings{
         countryName = "USA";
         movie = "RRR";
 
+         System.out.println("\nReassigning of value of 5 variable using literals!!\n");
+
         System.out.println("Sport: " + sport);
         System.out.println("Season: " + season);
         System.out.println("School Name: " + schoolName);
         System.out.println("Country: " + countryName);
         System.out.println("Movie: " + movie);
+
         
         // Using new Keyword
         String greeting = new String("Hello, Good Morning");
@@ -49,16 +52,18 @@ public class Strings{
         String food = new String("Pizza");
         String programmingLanguage = new String("Java");
 
+        System.out.println("\nUsing New keyword\n");
+
       
         System.out.println("Greeting: " + greeting);
         System.out.println("User Name: " + userName);
         System.out.println("Email Address: " + emailAddress);
         System.out.println("Phone Number: " + phoneNumber);
         System.out.println("Office Name: " + officeName);
-        System.out.println("Favorite Color: " + color);
+        System.out.println("Color: " + color);
         System.out.println("Date: " + date);
         System.out.println("Message: " + message);
-        System.out.println("Favorite Food: " + food);
+        System.out.println("Food: " + food);
         System.out.println("Programming Language: " + programmingLanguage);
 
         //Reassigning of Value using new keyword
@@ -68,6 +73,7 @@ public class Strings{
         food = new String("Burger");
         programmingLanguage = new String("C++");
 
+        System.out.println("\nReassigning of value of 5 variable!!\n");
         System.out.println("Color: " + color);
         System.out.println("Date: " + date);
         System.out.println("Message: " + message);
