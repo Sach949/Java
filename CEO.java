@@ -1,14 +1,14 @@
-public class Manager {
+public class CEO {
     String name;
     int id;
-    int noOfEmpUnder;
+    int noOfManagerUnder;
     Salary salary;
     Address address;
-    
-    public Manager(String name, int id, int noOfEmp, Salary salary, Address address){
+
+    public CEO(String name, int id, Salary salary, Address address, int noOfManager){
         this.name = name;
         this.id = id;
-        this.noOfEmpUnder = noOfEmp;
+        this.noOfManagerUnder = noOfManager;
         this.salary = salary;
         this.address = address;
     }
