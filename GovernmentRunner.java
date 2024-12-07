@@ -1,3 +1,11 @@
+package com.xwork.government;
+
+import com.xwork.government.example.ChiefMinister;
+import com.xwork.government.example.Government;
+import com.xwork.government.example.MLA;
+import com.xwork.government.example.Ministers;
+import com.xwork.government.example.Schemes;
+
 public class GovernmentRunner {
     public static void main(String[] args) {
         System.out.println("");
