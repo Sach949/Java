@@ -1,0 +1,81 @@
+public class IOExceptionExmpl {
+
+	public static void main(String[] args) {
+
+		try {
+			File file = new File("");
+			file.getPath();
+			System.err.println(file.getName());
+			file.createNewFile();
+		} catch (IOException e) {
+			System.out.println(e);
+			e.printStackTrace();
+		}finally {
+			System.out.println("Give correect path");
+		}
+	}
+
+}
+
+
+public class InputMismatchExmpl {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		try {
+			
+			int a = sc.nextInt();
+			System.out.println("Enter number: "+a);
+			
+		} catch (InputMismatchException e) {
+			System.err.println(e);
+			System.err.println(e.getMessage());
+		}finally {
+			System.out.println("Enter correct value");
+		}
+		
+	}
+}
+
+public class ArithmaticExcptionExmpl {
+
+	public static void main(String[] args) {
+		calculatePercent(12,0);
+	}
+	
+	public static int calculatePercent(int obtainedMarks, int totalMarks) {
+
+		
+		//System.out.println("Total percent is: "+percent);
+		try {
+			int percent = (obtainedMarks / totalMarks) * 100;
+			System.out.println("Total percent is: "+percent);
+			System.exit(1);
+			
+		} catch (ArithmeticException e) {
+			System.err.println("Percent is zero");
+			System.err.println(e);
+		}finally {
+			System.out.println("Invalid");
+		}
+		return 0;
+	
+	}
+}
+
+public class StringOutofBoundExmpl {
+
+	public static void main(String[] args) {
+		String name = "Suraj";
+		try {
+			System.out.println(name.charAt(5));
+			System.exit(1);
+		} catch (StringIndexOutOfBoundsException e) {
+			System.out.println(e);
+			System.err.println(e.getMessage());
+		}finally {
+			System.out.println("Enter Valid index number");
+		}
+	}
+}
