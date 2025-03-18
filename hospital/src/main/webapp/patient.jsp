@@ -4,8 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>hospital</title>
+<title>Insert title here</title>
 </head>
+
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
 	integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -24,22 +25,33 @@
   </div>
 </nav>
 
-<div>
-<p>Welcome to Hospital</p>
-<p>${user}</p>
-<p>${pass}</p>
+<div align="center">
+<form action="patient" method="post">
+<div class="mb-3" style="width:300px">
+    <label class="form-label">Patient Name</label>
+    <input type="text" name ="pat" class="form-control" aria-describedby="name">
+  </div>
+  <div class="mb-3" style="width:300px">
+    <label class="form-label">Disease</label>
+    <input type="text" class="form-control" name="dis">
+  </div>
+  <div class="mb-3" style="width:300px">
+    <label class="form-label">Address</label>
+    <input type="text" class="form-control" name="addr">
+  </div>
+  <div class="mb-3" style="width:300px">
+    <label class="form-label">Guardian</label>
+    <input type="text" class="form-control" name="guard">
+  </div>
+   <input type="submit" value ="Add"  class="btn btn-primary"></input>
+	<input type="reset" value ="Reset"  class="btn btn-primary"></input>
+</form>
 </div>
-<br>
 
-<div align = "left">
-<p>For Patient, click here : <a type="submit" class="btn btn-primary" href="patient.jsp">Patient</a></p>
-<p>For Doctor, click here : <a type="submit" class="btn btn-primary" href="doctor.jsp">Doctor</a></p>
-</div>
 <br>
 <div align = "center">
 <h5>Copyright@2025</h5>
 Created By Sachin
 </div>
-
 </body>
 </html>

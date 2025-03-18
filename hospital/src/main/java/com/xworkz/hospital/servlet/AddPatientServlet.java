@@ -9,24 +9,25 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet(urlPatterns = "/test")
-public class WelcomeServlet extends HttpServlet{
+@WebServlet(urlPatterns = "/patient")
+public class AddPatientServlet extends HttpServlet{
 
-	public WelcomeServlet() {
+	public AddPatientServlet() {
 		
 	}
 	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		String user = req.getParameter("user");
-		String pass = req.getParameter("pass");
+		String name = req.getParameter("name");
+		String dis = req.getParameter("dis");
+		String addr = req.getParameter("addr");
+		String guard = req.getParameter("guard");
 		
-		System.out.println(user);
-		System.out.println(pass);
-		
-		RequestDispatcher rd = req.getRequestDispatcher("welcome.jsp");
-		req.setAttribute("user", user);
-		req.setAttribute("pass", pass);
+		RequestDispatcher rd = req.getRequestDispatcher("patientSuccess.jsp");
+		req.setAttribute("name", name);
+		req.setAttribute("dis", dis);
+		req.setAttribute("addr", addr);
+		req.setAttribute("guard", guard);
 		
 		rd.forward(req, resp);
 	}

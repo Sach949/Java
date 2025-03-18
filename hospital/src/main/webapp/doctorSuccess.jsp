@@ -4,8 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>hospital</title>
+<title>Insert title here</title>
 </head>
+
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
 	integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -24,16 +25,12 @@
   </div>
 </nav>
 
-<div>
-<p>Welcome to Hospital</p>
-<p>${user}</p>
-<p>${pass}</p>
-</div>
-<br>
-
-<div align = "left">
-<p>For Patient, click here : <a type="submit" class="btn btn-primary" href="patient.jsp">Patient</a></p>
-<p>For Doctor, click here : <a type="submit" class="btn btn-primary" href="doctor.jsp">Doctor</a></p>
+<div align="center">
+<p>Doctor details added successfully</p>
+<p>${name}</p>
+<p>${spec}</p>
+<p>${addr}</p>
+<p>${qual}</p>
 </div>
 <br>
 <div align = "center">
